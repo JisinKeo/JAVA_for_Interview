@@ -39,3 +39,21 @@ Math.round() 메서드는 실수 값을 받아와서 그 값에 가장 가까운
 아니요, String은 기본 데이터 타입(primitive type)이 아니라 참조 타입(reference type)입니다. <br/>
 String은 참조 타입이므로, 객체를 힙(heap)에 할당하고 그 주소를 스택에 저장합니다. <br/>
 Java에서 String은 불변(immutable)입니다. 객체 수정 시 새로운 객체를 생성해야만 합니다.
+
+-----------------------
+### 자바에서 문자열을 조작하는 클래스는 무엇이 있습니까? 각 클래스의 차이점은 뭘까요?
+String 클래스는 불변(immutable)입니다. 즉, 한번 생성된 String 객체는 변경할 수 없습니다. 
+StringBuilder 클래스는 가변(mutable)한 객체입니다. 즉, StringBuilder 객체는 생성 후에도 변경할 수 있습니다.
+StringBuffer 클래스도 StringBuilder와 마찬가지로 가변(mutable)한 객체입니다. 
+StringBuffer는 StringBuilder와 달리 스레드에 안전(thread-safe)합니다. 여러 스레드 작업 시 StringBuffer가 유리합니다.
+
+-----------------------
+### String str ="i"와 String str = new String("i")가 동일합니까?
+String str = "i";의 경우, 문자열 리터럴 "i"가 스트링 풀(String pool)이라는 특별한 영역에 저장됩니다. 스트링 풀은 JVM의 힙 메모리에 있는 공간입니다.
+String 객체를 다시 만들 경우, JVM은 스트링 풀에 있는 같은 값을 가리키도록 합니다. 이 방법은 메모리를 효율적으로 사용하도록 돕습니다.
+String str = new String("i");의 경우, 새로운 String 객체가 힙 메모리에 생성됩니다. 
+이렇게 생성된 String 객체는 스트링 풀과 상관없이 항상 새로운 메모리 공간을 차지합니다.
+
+-----------------------
+### 문자열을 반전시키는 가장 좋은 방법은 무엇인가요?
+StringBuilder의 reverse() 메서드를 사용하는 것입니다.
