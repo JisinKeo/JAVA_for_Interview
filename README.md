@@ -121,3 +121,18 @@ Java에서 배열을 리스트로 전환하는 것은 Arrays 클래스의 asList
 List<String> list = Arrays.asList(array);
 이 변환된 리스트는 고정 크기를 가지므로, ArrayList 생성자를 사용하여 새 ArrayList를 생성하는 것이 좋습니다.
 List<String> list = new ArrayList<>(Arrays.asList(array));
+
+-----------------------
+### Array와 ArrayList의 차이점을 말해주세요.
+Array는 고정된 크기를 가지고, ArrayList는 동적으로 크기가 조정될 수 있는 가변 크기 배열입니다.
+Array는 원시 타입과 객체 모두를 저장할 수 있습니다. 
+반면에 ArrayList는 객체만을 저장할 수 있으며, 원시 타입은 래퍼 클래스를 통해 객체로 변환되어야 합니다.
+
+-----------------------
+### Queue에서, poll()과 remove()의 차이는 무엇인가요?
+poll() 메소드는 큐에서 가장 앞에 있는 요소를 제거하고 그 요소를 반환합니다. 만약 큐가 비어있다면 null을 반환합니다.
+remove() 메소드도 큐에서 가장 앞에 있는 요소를 제거하고 그 요소를 반환합니다. 그러나 큐가 비어있을 때 remove() 메소드를 호출하면, poll() 메소드와는 달리 NoSuchElementException을 던집니다.
+
+-----------------------
+### thread-safe한 컬렉션 클래스들은 무엇이 있을까요?
+ConcurrentHashMap, CopyOnWriteArrayList, CopyOnWriteArraySet, ConcurrentLinkedQueue, ConcurrentLinkedDeque 등이 있습니다.
