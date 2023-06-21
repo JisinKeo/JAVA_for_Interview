@@ -136,3 +136,17 @@ remove() 메소드도 큐에서 가장 앞에 있는 요소를 제거하고 그 
 -----------------------
 ### thread-safe한 컬렉션 클래스들은 무엇이 있을까요?
 ConcurrentHashMap, CopyOnWriteArrayList, CopyOnWriteArraySet, ConcurrentLinkedQueue, ConcurrentLinkedDeque 등이 있습니다.
+
+-----------------------
+### iterator란 무엇인가요?
+Iterator는 Java의 Collection Framework에서 데이터 요소를 순차적으로 접근하는데 사용되는 인터페이스입니다.
+
+-----------------------
+### iterator의 사용 목적은 무엇인가요? 어떤 특징이 있죠?
+Iterator를 사용하면 컬렉션의 요소를 순회하는 동안 해당 요소를 안전하게 제거할 수 있습니다. next() 메서드는 순회할 다음 요소를 반환하고, hasNext() 메서드는 순회할 요소가 더 있는지를 확인하고, remove() 메서드는 next() 메서드로 반환된 마지막 요소를 컬렉션에서 제거하는 기능을 제공합니다. 일반적으로 hasNext(), next(), remove() 순으로 메소드를 호출해야 한다.
+
+-----------------------
+### iterator와 listIterator의 차이는 무엇인가요?
+Iterator는 전진 방향으로만 요소를 순회할 수 있습니다. 반면에 ListIterator는 양방향으로 순회할 수 있습니다. 
+ListIterator는 add(E e)와 set(E e)라는 메서드를 제공하여 리스트의 요소를 추가하거나 수정할 수 있습니다. 
+반면에 Iterator는 요소를 제거하는 remove() 메서드만 제공하며, 요소를 추가하거나 수정하는 기능은 제공하지 않습니다.
