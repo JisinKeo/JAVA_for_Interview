@@ -343,3 +343,18 @@ throw는 실제로 프로그램에서 예외를 발생시키는 데 사용되는
 final : 한 번 초기화되면 그 값을 변경할 수 없습니다. 이는 상수를 선언할 때 사용됩니다.
 finally : 이 키워드는 try-catch 블록에서 사용되며, 이 블록에 포함된 코드는 예외 발생 여부에 관계 없이 항상 실행됩니다. 
 finalize : Object 클래스의 메서드로, 객체가 가비지 컬렉션에 의해 수거될 때 JVM에 의해 호출됩니다. 그러나 자바 9부터 이 메서드는 deprecated 되었습니다.
+
+-----------------------
+### try-catch-finally에서 생략할 수 있는 부분이 무엇인가요?
+try는 절대 생략할 수 없습니다. catch와 finally 블록은 선택적입니다. 즉, 둘 중 하나는 생략할 수 있지만 둘 다 생략할 수는 없습니다.
+
+-----------------------
+### catch가 반환되면 finally가 실행되나요?
+네, catch 블록에서 반환(return)문이 실행되더라도, 그 반환문은 finally 블록이 실행된 후에 실제로 반환됩니다.
+
+-----------------------
+### exception 클래스의 예시를 말해주세요.
+Error : 이 클래스는 시스템 레벨의 심각한 문제, 예를 들어 OutOfMemoryError, StackOverflowError, AssertionError 등을 표현합니다.
+Exception : 이 클래스는 개발자가 처리할 수 있는 수준의 예외를 나타냅니다. 이 클래스는 다시 Checked Exception과 Unchecked Exception으로 나뉩니다.
+Checked Exception : 이들은 컴파일러가 체크하므로, 개발자가 반드시 이들을 처리해야 합니다.
+Unchecked Exception : 이들은 주로 프로그래밍 오류로 인해 발생하며, 컴파일러가 체크하지 않습니다. 
