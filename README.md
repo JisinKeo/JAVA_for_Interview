@@ -419,3 +419,7 @@ JSONP(JSON with Padding)는 Single-Origin Policy나 CORS(Cross-Origin Resource S
 주요 구조 패턴에는 Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy 등이 있습니다.
 행동 패턴은 객체나 클래스 사이의 알고리즘이나 책임 분배에 대한 패턴입니다. 이들은 객체 간의 통신과 책임 분배를 중점으로 다룹니다. 
 주요 행동 패턴에는 Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor 등이 있습니다.
+
+-----------------------
+### 심플 팩토리와 추상 팩토리의 차이가 무엇인가요?
+Simple Factory 패턴은 클래스의 인스턴스를 생성하는 "팩토리" 메서드를 제공합니다. Abstract Factory 패턴은 연관된 또는 의존적인 객체들을 생성하는 인터페이스를 제공합니다. 
