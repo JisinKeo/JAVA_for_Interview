@@ -409,3 +409,13 @@ HTTP 응답 수신 : 웹 서버는 HTTP 요청을 처리하고, 요청한 데이
 -----------------------
 ### JSONP가 무엇인가요?
 JSONP(JSON with Padding)는 Single-Origin Policy나 CORS(Cross-Origin Resource Sharing)에 의해 제한되지 않는 script 태그를 이용해 도메인 간 데이터를 전송하는 방식입니다.
+
+-----------------------
+### 디자인 패턴에 대해 말해주세요.
+디자인 패턴은 특정 문제나 상황에서 반복적으로 발생하는 설계 문제를 해결하는 데에 일반적으로 사용되는 체계화된 최선의 방법을 가리킵니다. 
+생성 패턴은 객체가 생성되는 방식을 중심으로 설계되며, 객체의 생성 과정과 클래스의 결합도를 최소화합니다. 
+주요 생성 패턴에는 Singleton, Factory Method, Abstract Factory, Builder, Prototype 등이 있습니다.
+구조 패턴은 클래스나 객체를 더 큰 구조로 구성하는 패턴입니다. 이들은 클래스의 구조를 구성하여 클래스나 객체의 기능을 확장하거나 독립적으로 작동하게 만듭니다. 
+주요 구조 패턴에는 Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy 등이 있습니다.
+행동 패턴은 객체나 클래스 사이의 알고리즘이나 책임 분배에 대한 패턴입니다. 이들은 객체 간의 통신과 책임 분배를 중점으로 다룹니다. 
+주요 행동 패턴에는 Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor 등이 있습니다.
