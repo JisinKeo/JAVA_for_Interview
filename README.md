@@ -454,3 +454,21 @@ AOP는 일반적으로 로깅, 트랜잭션 관리, 보안 등과 같은 기능�
 IOC(Inversion of Control, 제어의 역전)는 프로그램의 흐름 제어를 개발자가 아닌 프레임워크 또는 컨테이너에 위임하는 개념입니다.
 IOC의 주요 목표는 코드의 결합도를 줄이고 모듈 간의 독립성을 높여 유지보수와 테스트를 용이하게 하는 것입니다. 
 스프링 프레임워크의 주요 원칙 중 하나인 Dependency Injection (의존성 주입)은 IOC의 특정 형태입니다. Dependency Injection은 객체가 필요로 하는 다른 객체(의존성)를 외부에서 주입받아 사용하는 기법으로, 이를 통해 객체 간의 결합도를 낮추고 유연한 코드를 작성할 수 있습니다.
+
+-----------------------
+### 스프링의 메인 모듈은 무엇인가요?
+Spring Core: 스프링의 핵심 기능인 제어의 역전(Inversion of Control, IoC)과 의존성 주입(Dependency Injection, DI)을 제공합니다.
+
+Spring AOP (Aspect Oriented Programming): 공통 관심사를 분리하고 코드 모듈화를 돕는 AOP를 지원합니다.
+
+Spring DAO: 데이터베이스 연산을 처리하는 DAO(Data Access Object)를 지원합니다. JDBC와 같은 예외처리와 리소스 관리를 단순화해줍니다.
+
+Spring ORM: Hibernate, JPA 등 주요 ORM(Object-Relational Mapping) 프레임워크와의 통합을 지원합니다.
+
+Spring Web MVC: 웹 애플리케이션을 위한 MVC(Model-View-Controller) 프레임워크를 제공합니다.
+
+Spring WebFlux: 비동기 처리와 리액티브 프로그래밍을 지원하는 웹 프레임워크입니다.
+
+Spring Security: 애플리케이션의 보안 관련 기능을 제공하는 프레임워크로, 인증, 권한 부여, 공격 방어 등의 기능을 제공합니다.
+
+Spring Boot: 스프링 기반 애플리케이션을 빠르게 개발할 수 있도록 돕는 도구로, 기본 설정, 서버 설정 등을 자동화해줍니다.
